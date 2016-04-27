@@ -11,7 +11,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
-  font-family: sans-serif;
+  font-family: Futura-light;
 }
 
 *, *::before, *::after {
@@ -24,31 +24,50 @@ body {
 }
 
 svg {
-  width: 100%;
   display: block;
-  margin: auto;
+  margin: 0 auto;
+    
 }
 
 .title {
+    max-width: 30em;
+    
+}
+
+.heart-rate {
   margin-top: 2rem;
   width: 80%;
+
+  animation: hide 2s ease infinite;
+
+}
+
+.information {
+  width: 20%;
+    
 }
 
 .bandaid {
   width: 15%;
-  margin-top: 2rem;
+  margin-top: 10rem;
   margin-bottom: 2rem;
-
-  cursor: pointer;
+  min-width: 7em;
     
 }
 
-.bandaid:active {
-  -ms-transform: rotate(-150deg);
-  -webkit-transform: rotate(-150deg);
-  transform: rotate(-150deg);
+.btn {
+  cursor: pointer;
+  width: 40%;
+  display: block;
 }
 
+.btn:hover {
+  fill: white;
+}
+
+.is-facts .facts path {
+  fill: black;
+}
 
 .ambulance {
   width: 70%;
@@ -58,21 +77,15 @@ svg {
 
 .map {
   width: 80%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 path:hover {
 
-}
-
-.nurse:hover {
-  fill: green;
-    
-}
-    
+}  
 
 .hand {
-  width: 60%;
+  width: 40%;
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
@@ -84,7 +97,8 @@ path:hover {
 }
 
 p {
-  margin: 2rem;
+  font-size: 2rem;
+  margin: 4rem;
   color: #6d6e70;
 }
 
@@ -98,6 +112,20 @@ p {
   text-align: left;
 }
 
+.banner-content-inner {
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+@keyframes hide {
+  0% { opacity: 1; }
+  10% { opacity: 1; }
+  15% { opacity: 0; }
+  100% { opacity: 0; }
+} 
 
 @keyframes ambulanceshift {
 
