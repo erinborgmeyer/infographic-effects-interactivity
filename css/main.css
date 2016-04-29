@@ -26,12 +26,10 @@ body {
 svg {
   display: block;
   margin: 0 auto;
-    
 }
 
 .title {
     max-width: 30em;
-    
 }
 
 .heart-rate {
@@ -39,20 +37,23 @@ svg {
   width: 80%;
 
   animation: hide 2s ease infinite;
-
 }
 
-.information {
-  width: 20%;
-    
+.info-one {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.info-two {
+  width: 100%;
 }
 
 .bandaid {
   width: 15%;
   margin-top: 10rem;
-  margin-bottom: 2rem;
-  min-width: 7em;
-    
+  margin-bottom: 5rem;
+  min-width: 10em;
+  max-width: 15em;
 }
 
 .btn {
@@ -72,7 +73,7 @@ svg {
 .ambulance {
   width: 70%;
     
-  animation: ambulanceshift 3s linear infinite;  
+  animation: ambulanceshift 3s linear infinite;
 }
 
 .map {
@@ -80,12 +81,8 @@ svg {
   margin-top: 1rem;
 }
 
-path:hover {
-
-}  
-
 .hand {
-  width: 40%;
+  width: 50%;
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
@@ -97,8 +94,8 @@ path:hover {
 }
 
 p {
-  font-size: 2rem;
-  margin: 4rem;
+  font-size: 1.75rem;
+  margin: 3rem;
   color: #6d6e70;
 }
 
@@ -118,7 +115,24 @@ p {
   margin-right: auto;
 }
 
+.nurses-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
+.nurses-list li {
+  margin-bottom: 1.5rem;
+}
+
+.nurses-list figure {
+  margin: 0;
+}
+
+.nurses-list img {
+  display: block;
+  width: 200px;
+}
 
 @keyframes hide {
   0% { opacity: 1; }
