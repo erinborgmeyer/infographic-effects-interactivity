@@ -37,7 +37,7 @@ svg {
   width: 80%;
 
   animation: hide 2s ease infinite;
-  transition: width 2s, heigh 4s
+  transition: width 2s, heigh 4s;
 }
 
 .info-one {
